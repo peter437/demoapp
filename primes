@@ -1,0 +1,6 @@
+# this outputs prime numbers
+
+(2..59).each do x
+  if x
+    if x == integer
+      
