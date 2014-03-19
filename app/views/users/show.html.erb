@@ -11,10 +11,14 @@
 </p>
 
 <p>
+  <% if @user.tweets.empty? == true %>
+       No Tweets Yet!
+   <% else %>
   <strong>All tweets:</strong>
   <% @user.tweets.each do |singletweet| %>
     <%= singletweet.status %>
     <% end %>
+  <% end %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
