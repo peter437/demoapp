@@ -16,9 +16,6 @@
       <tr>
         <td><%= link_to tweet.status, tweet %></td>
         <td><%= User.find(tweet.user_id).name %></td>
-
-        
-        <td><%= link_to 'Destroy', tweet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
